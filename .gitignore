@@ -1,0 +1,37 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Thumbnails
+._*
+
+# Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Obsidian
+.obsidian/
+
+# Development files
+*.log
+*.swp
+*.swo
+*~
+
+# Temporary extraction files
+nortia-colors-24h.css
+nortia-colors-complete.css
+extract_colors.lua
+extract_colors_full.lua

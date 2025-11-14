@@ -1,0 +1,136 @@
+/*
+ * Nortia Day - Bright light theme for midday hours
+ * Based on nortia.nvim Hour 12 (brightest mode)
+ * Background: 98%, Foreground: 35%
+ */
+
+body {
+  /* Nortia color palette - Hour 12 */
+  --nortia-fg-1: #595959;
+  --nortia-fg-2: #6B6B6B;
+  --nortia-fg-3: #7A7A7A;
+  --nortia-fg-4: #878787;
+  --nortia-fg-5: #949494;
+  --nortia-bg-1: #FAFAFA;
+  --nortia-bg-2: #F2F2F2;
+  --nortia-bg-3: #EBEBEB;
+  --nortia-bg-4: #E3E3E3;
+  --nortia-bg-5: #DBDBDB;
+  --nortia-good-fg: #5C9F56;
+  --nortia-good-bg: #E6F1E4;
+  --nortia-bad-fg: #9F5656;
+  --nortia-bad-bg: #F1E4E4;
+  --nortia-warn-fg: #9F7A56;
+  --nortia-warn-bg: #F1EBE4;
+  --nortia-neutral-fg: #9F9E56;
+  --nortia-neutral-bg: #F1F1E4;
+  --nortia-palette-1: #C98613;
+  --nortia-palette-2: #FF622E;
+  --nortia-palette-3: #7CA522;
+  --nortia-palette-4: #FF5762;
+  --nortia-palette-5: #24A0FF;
+  --nortia-palette-6: #757CFF;
+
+  /* Base colors */
+  --background-primary: var(--nortia-bg-1);
+  --background-primary-alt: var(--nortia-bg-2);
+  --background-secondary: var(--nortia-bg-2);
+  --background-secondary-alt: var(--nortia-bg-1);
+  --background-modifier-border: var(--nortia-bg-5);
+  --background-modifier-form-field: var(--nortia-bg-2);
+  --background-modifier-form-field-highlighted: var(--nortia-bg-3);
+  --background-modifier-box-shadow: rgba(0, 0, 0, 0.05);
+  --background-modifier-success: var(--nortia-good-bg);
+  --background-modifier-error: var(--nortia-bad-bg);
+  --background-modifier-error-hover: var(--nortia-bad-bg);
+  --background-modifier-cover: rgba(0, 0, 0, 0.4);
+
+  /* Text colors */
+  --text-normal: var(--nortia-fg-1);
+  --text-muted: var(--nortia-fg-3);
+  --text-faint: var(--nortia-fg-5);
+  --text-on-accent: var(--nortia-bg-1);
+  --text-error: var(--nortia-bad-fg);
+  --text-accent: var(--nortia-palette-1);
+  --text-accent-hover: var(--nortia-palette-2);
+  --text-selection: rgba(201, 134, 19, 0.2);
+
+  /* Interactive elements */
+  --interactive-normal: var(--nortia-bg-3);
+  --interactive-hover: var(--nortia-bg-4);
+  --interactive-accent: var(--nortia-palette-1);
+  --interactive-accent-hover: var(--nortia-palette-2);
+  --interactive-success: var(--nortia-good-fg);
+
+  /* Scrollbars */
+  --scrollbar-bg: var(--nortia-bg-2);
+  --scrollbar-thumb-bg: var(--nortia-bg-4);
+  --scrollbar-active-thumb-bg: var(--nortia-bg-5);
+
+  /* Headings */
+  --h1-color: var(--nortia-palette-1);
+  --h2-color: var(--nortia-palette-2);
+  --h3-color: var(--nortia-palette-3);
+  --h4-color: var(--nortia-palette-4);
+  --h5-color: var(--nortia-palette-5);
+  --h6-color: var(--nortia-palette-6);
+
+  /* Links */
+  --link-color: var(--nortia-palette-5);
+  --link-color-hover: var(--nortia-palette-6);
+  --link-external-color: var(--nortia-palette-4);
+  --link-unresolved-color: var(--nortia-fg-4);
+
+  /* Tags */
+  --tag-color: var(--nortia-palette-6);
+  --tag-background: var(--nortia-bg-3);
+  --tag-background-hover: var(--nortia-bg-4);
+
+  /* Code */
+  --code-normal: var(--nortia-fg-1);
+  --code-background: var(--nortia-bg-2);
+  --code-keyword: var(--nortia-palette-6);
+  --code-function: var(--nortia-palette-1);
+  --code-string: var(--nortia-palette-3);
+  --code-comment: var(--nortia-fg-4);
+  --code-operator: var(--nortia-fg-2);
+  --code-property: var(--nortia-palette-2);
+  --code-punctuation: var(--nortia-fg-3);
+  --code-value: var(--nortia-palette-5);
+  --code-important: var(--nortia-palette-4);
+
+  /* Lists and checkboxes */
+  --checkbox-color: var(--nortia-palette-1);
+  --checkbox-color-hover: var(--nortia-palette-2);
+  --list-marker-color: var(--nortia-palette-1);
+
+  /* Tables */
+  --table-header-background: var(--nortia-bg-3);
+  --table-row-alt-background: var(--nortia-bg-2);
+  --table-row-background: var(--nortia-bg-1);
+  --table-border-color: var(--nortia-bg-5);
+
+  /* Graphs */
+  --graph-line: var(--nortia-bg-5);
+  --graph-node: var(--nortia-palette-1);
+  --graph-node-unresolved: var(--nortia-fg-4);
+  --graph-node-tag: var(--nortia-palette-6);
+  --graph-node-attachment: var(--nortia-palette-3);
+
+  /* Git/Diff colors */
+  --background-modifier-success: var(--nortia-good-bg);
+  --text-success: var(--nortia-good-fg);
+  --background-modifier-error-rgb: 241, 228, 228;
+  --text-error: var(--nortia-bad-fg);
+  --text-warning: var(--nortia-warn-fg);
+
+  /* Dividers */
+  --hr-color: var(--nortia-bg-5);
+
+  /* Blockquote */
+  --blockquote-border-color: var(--nortia-palette-1);
+
+  /* Highlights */
+  --text-highlight-bg: var(--nortia-neutral-bg);
+  --text-highlight-bg-active: var(--nortia-warn-bg);
+}

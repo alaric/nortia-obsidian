@@ -1,0 +1,7 @@
+{
+  "name": "Nortia Night",
+  "version": "1.0.0",
+  "minAppVersion": "0.16.0",
+  "author": "Alaric Nightingale (ported from nortia.nvim)",
+  "authorUrl": "https://github.com/alaric/nortia.nvim"
+}
