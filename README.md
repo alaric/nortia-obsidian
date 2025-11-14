@@ -57,32 +57,46 @@ Each theme features:
 3. Open Obsidian Settings → Appearance → Themes
 4. Select your preferred Nortia theme from the dropdown
 
-### Method 2: Direct Download
-
-If you want all four themes:
+### Method 2: Clone from GitHub
 
 ```bash
 cd /path/to/your/vault/.obsidian/themes/
-cp -r /path/to/nortia.nvim/obsidian-themes/nortia-* .
+git clone https://github.com/yourusername/nortia-obsidian.git temp
+cp -r temp/Nortia* .
+rm -rf temp
 ```
+
+Or download individual themes directly.
+
+### Method 3: Manual Download
+
+1. Download this repository as a ZIP file
+2. Extract the ZIP file
+3. Copy the theme folders you want (`Nortia Night`, `Nortia Dusk`, `Nortia Dawn`, `Nortia Day`) to your vault's `.obsidian/themes/` directory
+4. Restart Obsidian
+5. Go to Settings → Appearance → Themes and select your theme
 
 ## Theme Structure
 
+After installation, your themes directory should look like this:
+
 ```
 .obsidian/themes/
-├── nortia-night/
+├── Nortia Night/
 │   ├── manifest.json
 │   └── theme.css
-├── nortia-dusk/
+├── Nortia Dusk/
 │   ├── manifest.json
 │   └── theme.css
-├── nortia-dawn/
+├── Nortia Dawn/
 │   ├── manifest.json
 │   └── theme.css
-└── nortia-day/
+└── Nortia Day/
     ├── manifest.json
     └── theme.css
 ```
+
+**Important:** Each theme must be in its own folder with the exact names shown above (with spaces, not hyphens).
 
 ## Color Mappings
 
