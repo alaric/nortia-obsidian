@@ -134,3 +134,64 @@ body {
   --text-highlight-bg: var(--nortia-neutral-bg);
   --text-highlight-bg-active: var(--nortia-warn-bg);
 }
+
+/* Fix dark elements in light theme */
+
+/* Select/dropdown backgrounds */
+select,
+.dropdown,
+.clickable-icon select,
+.setting-item select {
+  background-color: var(--nortia-bg-2);
+  color: var(--nortia-fg-1);
+  border: 1px solid var(--nortia-bg-5);
+}
+
+select:hover,
+.dropdown:hover,
+.setting-item select:hover {
+  background-color: var(--nortia-bg-3);
+}
+
+/* Input/text field backgrounds */
+input[type="text"],
+input[type="search"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+textarea,
+.setting-item input {
+  background-color: var(--nortia-bg-2);
+  color: var(--nortia-fg-1);
+  border: 1px solid var(--nortia-bg-5);
+}
+
+input[type="text"]:focus,
+input[type="search"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+textarea:focus {
+  background-color: var(--nortia-bg-3);
+  border-color: var(--nortia-palette-1);
+}
+
+/* Toggle switches (unchecked state) */
+.checkbox-container,
+.checkbox-container:not(.is-enabled),
+input[type="checkbox"]:not(:checked) + label::before {
+  background-color: var(--nortia-bg-3);
+  border-color: var(--nortia-bg-5);
+}
+
+/* Title bar */
+.titlebar,
+.titlebar-inner,
+.titlebar-button-container {
+  background-color: var(--nortia-bg-1);
+  color: var(--nortia-fg-1);
+}
+
+.titlebar-text {
+  color: var(--nortia-fg-2);
+}
