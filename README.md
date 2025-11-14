@@ -61,7 +61,7 @@ Each theme features:
 
 ```bash
 cd /path/to/your/vault/.obsidian/themes/
-git clone https://github.com/yourusername/nortia-obsidian.git temp
+git clone https://github.com/alaric/nortia-obsidian.git temp
 cp -r temp/Nortia* .
 rm -rf temp
 ```
