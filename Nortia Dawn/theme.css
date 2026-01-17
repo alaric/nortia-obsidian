@@ -184,14 +184,68 @@ input[type="checkbox"]:not(:checked) + label::before {
   border-color: var(--nortia-bg-5);
 }
 
-/* Title bar */
+/* Title bar and window frame */
 .titlebar,
 .titlebar-inner,
-.titlebar-button-container {
-  background-color: var(--nortia-bg-1);
-  color: var(--nortia-fg-1);
+.workspace-tab-header-container,
+.mod-root .workspace-tab-header-container,
+.workspace-ribbon.mod-left,
+.workspace-ribbon.mod-right,
+.titlebar-button-container.mod-left,
+.titlebar-button-container.mod-right {
+  background-color: var(--nortia-bg-1) !important;
 }
 
-.titlebar-text {
+.titlebar-text,
+.titlebar-button {
   color: var(--nortia-fg-2);
+}
+
+/* Window frame corners */
+body {
+  --titlebar-background: var(--nortia-bg-1);
+  --titlebar-background-focused: var(--nortia-bg-1);
+}
+
+/* Buttons */
+button,
+.clickable-icon,
+.mod-cta,
+.setting-item-control button {
+  background-color: var(--nortia-bg-3);
+  color: var(--nortia-fg-1);
+  border: 1px solid var(--nortia-bg-5);
+}
+
+button:hover,
+.clickable-icon:hover,
+.mod-cta:hover,
+.setting-item-control button:hover {
+  background-color: var(--nortia-bg-4);
+}
+
+/* Primary/CTA buttons */
+.mod-cta,
+button.mod-cta {
+  background-color: var(--nortia-palette-1);
+  color: var(--nortia-bg-1);
+  border: none;
+}
+
+.mod-cta:hover,
+button.mod-cta:hover {
+  background-color: var(--nortia-palette-2);
+}
+
+/* Tab headers */
+.workspace-tab-header,
+.workspace-tab-header-inner {
+  background-color: var(--nortia-bg-4);
+  color: var(--nortia-fg-3);
+}
+
+.workspace-tab-header.is-active {
+  background-color: var(--nortia-bg-1);
+  color: var(--nortia-fg-1);
+  border-bottom: 2px solid var(--nortia-palette-1);
 }
